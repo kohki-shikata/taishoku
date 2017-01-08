@@ -26,8 +26,9 @@ html.no-js(lang='ja')
                 input#name(type="text", placeholder="山田 太郎")
             .row.x-day
               .columns.small-3
-                lable(for="x-day-date")
-                input#x-day-date(type="date", placeholder="2017-02-01")
+                lable(for="x-day-date").text-right.middle 退職日
+              .columns.small-9
+                input#x-day-date(type="text", placeholder="2017-02-01")
 
     script(src='common/js/jquery.min.js')
     //- script(src='common/js/what-input.min.js')

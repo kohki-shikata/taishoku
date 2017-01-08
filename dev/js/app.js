@@ -35,3 +35,13 @@ $('#name').on("keyup",function(){
   var name = $(this).val();
   $('#preview .name-person').text(name);
 });
+
+//退職日、デートピッカー
+flatpickr('#x-day-date');
+
+$('#x-day-date').on("change",function(){
+  var xday = $(this).val();
+  xday = xday.split("-");
+  $('#preview .x-day').text('平成' + xday[0] - 1989 + '年' + xday[1] + '月' + xday[2] + '日');
+  console.log(xday[0]);
+});

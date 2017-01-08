@@ -70,6 +70,7 @@
               -1px 1px 1px #888,
               1px -1px 1px #888;
 
+
   p {
     font-size: 12pt;
     margin-left: 1em;
@@ -116,5 +117,5 @@
   cursor: pointer;
   color: #333;
   opacity: 1;
-  background-color: lighten($primary,15%);
+  // background-color: lighten( $primary,15%);
 }
