@@ -9,28 +9,7 @@ html.no-js(lang='en')
   body
     .row.expanded.collapse
       .columns.medium-6(style="height: 100vh; background: #ddd;")#preview
-        .page
-          h2.text-center 退職願
-          .shigi.text-right
-            p 私議、
-          .main-text
-            p
-              |この度、一身上の都合により、来る
-              time 平成n年n月n日
-              |をもって、退職致したく、ここにお願い申し上げます。
-          .signature
-            .date
-              time 平成n年n月n日
-            .name
-              p.position 営業部一課
-              p 山田太郎
-          .company
-            .company-name
-              p 株式会社サンプル
-            .company-ceo-name
-              p
-                |代表取締役社長　田中一郎
-                span.title 様
+        include elements/_preview
 
       .columns.medium-6
     script(src='common/js/jquery.min.js')
