@@ -10,6 +10,13 @@ html.no-js(lang='en')
     .row.expanded.collapse
       .columns.medium-6(style="height: 100vh; background: #ddd;")#preview
         include elements/_preview
+        #inputs
+          form
+            .row
+              .columns.small-3
+                label(for="name").text-right.middle 退職者の名前
+              .columns.small-9
+                input#name(type="text", placeholder="山田 太郎")
 
       .columns.medium-6
     script(src='common/js/jquery.min.js')
