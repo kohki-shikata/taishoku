@@ -53,11 +53,13 @@ var copy_js = [
   'bower_components/jquery/dist/jquery.min.js',
   'bower_components/motion-ui/dist/js/motion-ui.min.js',
   'bower_components/what-input/what-input.min.js',
+  'bower_components/flatpickr/dist/flatpickr.min.js',
   'js/app.js',
 ];
 
 var copy_css = [
 'bower_components/motion-ui/dist/motion-ui.min.css',
+'bower_components/flatpickr/dist/flatpickr.min.css',
 ];
 
 gulp.task('copy', function () {

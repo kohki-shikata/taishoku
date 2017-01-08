@@ -5,8 +5,9 @@ html.no-js(lang='ja')
     meta(http-equiv='x-ua-compatible', content='ie=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title 30秒で退職届
-    link(rel='stylesheet', href='common/css/app.css')
     link(rel='stylesheet', href='common/css/toggle-switch.css')
+    link(rel='stylesheet', href='common/css/flatpickr.min.css')
+    link(rel='stylesheet', href='common/css/app.css')
   body
     .row.expanded.collapse
       .columns.medium-6#preview
@@ -18,13 +19,18 @@ html.no-js(lang='ja')
             a.button.disabled#type-notif 退職届
         #inputs
           form
-            .row
+            .row.user-name
               .columns.small-3
                 label(for="name").text-right.middle 退職者の名前
               .columns.small-9
                 input#name(type="text", placeholder="山田 太郎")
+            .row.x-day
+              .columns.small-3
+                lable(for="x-day-date")
+                input#x-day-date(type="date", placeholder="2017-02-01")
 
     script(src='common/js/jquery.min.js')
     //- script(src='common/js/what-input.min.js')
     script(src='common/js/foundation.min.js')
+    script(src='common/js/flatpickr.min.js')
     script(src='common/js/app.js')
