@@ -15,8 +15,8 @@
 // @include foundation-accordion-menu;
 // @include foundation-badge;
 // @include foundation-breadcrumbs;
-// @include foundation-button-group;
-// @include foundation-callout;
+@include foundation-button-group;
+@include foundation-callout;
 // @include foundation-close-button;
 // @include foundation-menu;
 // @include foundation-menu-icon;
@@ -106,11 +106,15 @@
     }
   }
 
-
-
-
-
   .company-name p {
     margin-left: 0;
   }
+}
+
+#type-proposal.disabled,
+#type-notif.disabled {
+  cursor: pointer;
+  color: #333;
+  opacity: 1;
+  background-color: lighten($primary,15%);
 }

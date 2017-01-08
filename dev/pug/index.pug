@@ -6,10 +6,16 @@ html.no-js(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title 30秒で退職届
     link(rel='stylesheet', href='common/css/app.css')
+    link(rel='stylesheet', href='common/css/toggle-switch.css')
   body
     .row.expanded.collapse
-      .columns.medium-6(style="height: 100vh; background: #ddd;")#preview
+      .columns.medium-6#preview
         include elements/_preview
+      .columns.medium-6#controller
+        #select-type
+          .expanded.button-group
+            a.button#type-proposal 退職願
+            a.button.disabled#type-notif 退職届
         #inputs
           form
             .row
@@ -18,7 +24,6 @@ html.no-js(lang='en')
               .columns.small-9
                 input#name(type="text", placeholder="山田 太郎")
 
-      .columns.medium-6
     script(src='common/js/jquery.min.js')
     //- script(src='common/js/what-input.min.js')
     script(src='common/js/foundation.min.js')
