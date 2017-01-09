@@ -47,13 +47,13 @@ flatpickr(date_fields);
 $(date_fields[0]).on("change",function(){
   var xday = $(this).val();
   xday = xday.split("-");
-  $('#preview .x-day').text('平成' + ( xday[0] - 1989 ) + '年' + xday[1] + '月' + xday[2] + '日');
+  $('#preview .x-day').html('平成<span class="tcy">' + ( xday[0] - 1989 ) + '</span>年<span class="tcy">' + xday[1] + '</span>月<span class="tcy">' + xday[2] + '</span>日');
   console.log(xday[0]);
 });
 
 $(date_fields[1]).on("change",function(){
   var sday = $(this).val();
   sday = sday.split("-");
-  $('#preview .submit-day').text('平成' + ( sday[0] - 1989 ) + '年' + sday[1] + '月' + sday[2] + '日');
+  $('#preview .submit-day').html('平成<span class="tcy">' + ( sday[0] - 1989 ) + '</span>年<span class="tcy">' + sday[1] + '</span>月<span class="tcy">' + sday[2] + '</span>日');
   console.log(xday[0]);
 });
