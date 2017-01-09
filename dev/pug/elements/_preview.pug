@@ -6,13 +6,30 @@
   .main-text
     p
       |この度、一身上の都合により、来たる
-      time.x-day 平成n年n月n日
+      time.x-day
+        |平成
+        span.tcy n
+        |年
+        span.tcy n
+        |月
+        span.tcy n
+        |日
       |をもって、
-      span.type-proposal.content 退職致したく、ここにお願い申し上げます。
+      span.type-proposal.content |退職致したく、
+      br
+      span ここにお願い申し上げます。
       span.type-notification.content.hide 退職致します。
   .signature
     .date
-      time.submit-day 平成n年n月n日
+      p
+        time.submit-day
+          |平成
+          span.tcy n
+          |年
+          span.tcy n
+          |月
+          span.tcy n
+          |日
     .name
       p.position 営業部一課
       p.name-person 山田太郎
