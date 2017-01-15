@@ -13,10 +13,17 @@ html.no-js(lang='ja')
       .columns.medium-6#preview
         include elements/_preview
       .columns.medium-6#controller
-        #select-type
-          .expanded.button-group
-            a.button#type-proposal 退職願
-            a.button.disabled#type-notif 退職届
+        .row
+          .columns.medium-6
+            #select-type
+              .expanded.button-group.rounded
+                a.button#type-proposal 退職願
+                a.button.disabled#type-notif 退職届
+          .columns.medium-6
+            #select-shigi
+              .expanded.button-group.rounded
+                a.button#type-shigi 私議
+                a.button.disabled#type-shiji 私事
         #inputs
           form
             .row.user-name

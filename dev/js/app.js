@@ -30,6 +30,29 @@ $(switch_notif).click( function() {
   $(switch_notif).addClass('disabled');
 })
 
+// 私事か私議かの選択
+
+var content_shigi = $('#shigi');
+var content_shiji = $('#shiji');
+
+var switch_shigi = $('#type-shigi');
+var switch_shiji = $('#type-shiji');
+
+$(switch_shigi).click( function() {
+  console.log("switch_shigi is clicked");
+  $(content_shigi).removeClass('hide');
+  $(content_shiji).addClass('hide');
+  $(switch_shiji).addClass('disabled');
+  $(switch_shigi).removeClass('disabled');
+})
+$(switch_shiji).click( function() {
+  console.log("switch_shji is clicked");
+  $(content_shigi).addClass('hide');
+  $(content_shiji).removeClass('hide');
+  $(switch_shiji).removeClass('disabled');
+  $(switch_shigi).addClass('disabled');
+})
+
 //名前のリアルタイム入力
 $('#name').on("keyup",function(){
   var name = $(this).val();
