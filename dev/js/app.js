@@ -40,15 +40,15 @@ var switch_shiji = $('#type-shiji');
 
 $(switch_shigi).click( function() {
   console.log("switch_shigi is clicked");
-  $(content_shigi).removeClass('hide');
-  $(content_shiji).addClass('hide');
+  $(content_shigi).addClass('hide');
+  $(content_shiji).removeClass('hide');
   $(switch_shiji).addClass('disabled');
   $(switch_shigi).removeClass('disabled');
 })
 $(switch_shiji).click( function() {
   console.log("switch_shji is clicked");
-  $(content_shigi).addClass('hide');
-  $(content_shiji).removeClass('hide');
+  $(content_shigi).removeClass('hide');
+  $(content_shiji).addClass('hide');
   $(switch_shiji).removeClass('disabled');
   $(switch_shigi).addClass('disabled');
 })
@@ -66,6 +66,18 @@ var date_fields = [
 ];
 
 flatpickr(date_fields);
+
+var today = new Date();
+
+//年
+var year = today.getFullYear();
+
+//月
+//1月が0、12月が11。そのため+1をする。
+var month = today.getMonth()+1;
+
+//日
+var date = today.getDate();
 
 $(date_fields[0]).on("change",function(){
   var xday = $(this).val();

@@ -118,15 +118,16 @@
   }
 }
 
-// #type-proposal.disabled,
-// #type-notif.disabled,
-// #type-shiji.disabled,
-// #type-shigi.disabled {
-//   cursor: pointer;
-//   color: #777;
-//   opacity: 1;
-//   background-color: lighten($primary-color,35%);
-// }
+#select-type,
+#select-shigi {
+  label {
+    color: #666;
+  }
+
+  .disabled + label {
+    color: #fff;
+  }
+}
 
 .x-day,.submit-day {
   label {

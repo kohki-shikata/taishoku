@@ -4,6 +4,7 @@ html.no-js(lang='ja')
     meta(charset='utf-8')
     meta(http-equiv='x-ua-compatible', content='ie=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    //- meta(name='viewport', content='width=1280')
     title 30秒で退職届
     link(rel='stylesheet', href='common/css/toggle-switch.css')
     link(rel='stylesheet', href='common/css/flatpickr.min.css')
@@ -24,7 +25,7 @@ html.no-js(lang='ja')
                 .switch-toggle.callout
                   input#type-proposal(name='type', type='radio', checked='')
                   label(for='type-proposal', onclick='') 退職願
-                  input#type-notif(name='type', type='radio')
+                  input#type-notif(name='type', type='radio').disabled
                   label(for='type-notif', onclick='') 退職届
                   a.button
           .columns.medium-6
@@ -34,7 +35,7 @@ html.no-js(lang='ja')
                 .switch-toggle.callout
                   input#type-shigi(name='shigi', type='radio', checked='')
                   label(for='type-shigi', onclick='') 私議
-                  input#type-shiji(name='shigi', type='radio')
+                  input#type-shiji(name='shigi', type='radio').disabled
                   label(for='type-shiji', onclick='') 私事
                   a.button
         #inputs
