@@ -14,16 +14,29 @@ html.no-js(lang='ja')
         include elements/_preview
       .columns.medium-6#controller
         .row
+          .columns
+            h1.text-center 30秒で退職届
+        .row
           .columns.medium-6
             #select-type
-              .expanded.button-group.rounded
-                a.button#type-proposal 退職願
-                a.button.disabled#type-notif 退職届
+              fieldset
+                legend 書類の種別
+                .switch-toggle.callout
+                  input#type-proposal(name='type', type='radio', checked='')
+                  label(for='type-proposal', onclick='') 退職願
+                  input#type-notif(name='type', type='radio')
+                  label(for='type-notif', onclick='') 退職届
+                  a.button
           .columns.medium-6
             #select-shigi
-              .expanded.button-group.rounded
-                a.button#type-shigi 私議
-                a.button.disabled#type-shiji 私事
+              fieldset
+                legend 私議/私事
+                .switch-toggle.callout
+                  input#type-shigi(name='shigi', type='radio', checked='')
+                  label(for='type-shigi', onclick='') 私議
+                  input#type-shiji(name='shigi', type='radio')
+                  label(for='type-shiji', onclick='') 私事
+                  a.button
         #inputs
           form
             .row.user-name
@@ -31,18 +44,19 @@ html.no-js(lang='ja')
                 label(for="name").text-right.middle 退職者の名前
               .columns.small-9
                 input#name(type="text", placeholder="山田 太郎")
-            .row.x-day
-              .columns.small-3
-                label(for="x-day-date").text-right.middle 退職日
-              .columns.small-9
-                input#x-day-date(type="text", placeholder="2017-02-01")
-            .row.submit-day
-              .columns.small-3
-                label(for="submit-day").text-right.middle 書類提出日
-              .columns.small-9
-                input#submit-day(type="text", placeholder="2017-02-01")
-
-
+            .row
+              .columns.small-6
+                .row.x-day.collapse
+                  .columns.small-3
+                    label(for="x-day-date").text-right.middle 退職日
+                  .columns.small-9
+                    input#x-day-date(type="text", placeholder="2017-02-01")
+              .columns.small-6
+                .row.submit-day.collapse
+                  .columns.small-3
+                    label(for="submit-day").text-right.middle 書類提出日
+                  .columns.small-9
+                    input#submit-day(type="text", placeholder="2017-02-01")
     script(src='common/js/jquery.min.js')
     //- script(src='common/js/what-input.min.js')
     script(src='common/js/foundation.min.js')

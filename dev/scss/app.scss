@@ -118,14 +118,22 @@
   }
 }
 
-#type-proposal.disabled,
-#type-notif.disabled,
-#type-shiji.disabled,
-#type-shigi.disabled {
-  cursor: pointer;
-  color: #333;
-  opacity: 1;
-  // background-color: lighten( $primary,15%);
+// #type-proposal.disabled,
+// #type-notif.disabled,
+// #type-shiji.disabled,
+// #type-shigi.disabled {
+//   cursor: pointer;
+//   color: #777;
+//   opacity: 1;
+//   background-color: lighten($primary-color,35%);
+// }
+
+.x-day,.submit-day {
+  label {
+    font-size: rem-calc(11);
+  }
+}
+
 @media print {
   #controller {
     display: none;
