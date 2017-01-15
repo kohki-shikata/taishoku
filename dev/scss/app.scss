@@ -56,34 +56,37 @@
 }
 
 .page {
-
   font-family: serif;
   background-color: #fff;
   writing-mode: vertical-rl;
   text-orientation: upright;
-  // width: 70%;
-  width: 210mm;
-  padding: 25mm;
+
+  .tcy {
+    text-combine-upright: all;
+  }
+
+  width: 70%;
+  padding: 10%;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: scale(.5,.5) translate(-150%, -100%);
+  transform: translate(-78.5%, -50%);
   box-shadow: 1px 1px 1px #888,
               -1px 1px 1px #888,
               1px -1px 1px #888;
 
 
   p {
-    font-size: 16pt; // 14pt
-    line-height: 1.8;
+    font-size: 12pt;
     margin-left: 1em;
   }
 
   h2 {
     font-family: serif;
-    font-size: 36pt; // 36pt
+    font-size: 18pt;
     letter-spacing: .5em;
     margin-left: 1.75em;
+    margin-right: -1em;
   }
 
   .main-text p {
@@ -95,8 +98,7 @@
   }
 
   .signature {
-    position: absolute;
-    bottom: calc(25mm + 5em);
+    margin-top: 3em;
   }
 
   .name {
@@ -110,12 +112,6 @@
     }
   }
 
-  .company {
-    position: absolute;
-    left: 25mm;
-
-  }
-
   .company-name p {
     margin-left: 0;
   }
@@ -123,8 +119,8 @@
 
 #type-proposal.disabled,
 #type-notif.disabled,
-#type-shigi.disabled,
-#type-shiji.disabled {
+#type-shiji.disabled,
+#type-shigi.disabled {
   cursor: pointer;
   color: #333;
   opacity: 1;
