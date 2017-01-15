@@ -19,15 +19,15 @@ $(switch_prop).click( function() {
   console.log("switch_prop is clicked");
   $(content_prop).removeClass('hide');
   $(content_notif).addClass('hide');
-  $(switch_prop).addClass('disabled');
-  $(switch_notif).removeClass('disabled');
+  // $(switch_prop).addClass('disabled');
+  // $(switch_notif).removeClass('disabled');
 })
 $(switch_notif).click( function() {
   console.log("switch_notif is clicked");
   $(content_prop).addClass('hide');
   $(content_notif).removeClass('hide');
-  $(switch_prop).removeClass('disabled');
-  $(switch_notif).addClass('disabled');
+  // $(switch_prop).removeClass('disabled');
+  // $(switch_notif).addClass('disabled');
 })
 
 // 私事か私議かの選択
@@ -42,15 +42,15 @@ $(switch_shigi).click( function() {
   console.log("switch_shigi is clicked");
   $(content_shigi).addClass('hide');
   $(content_shiji).removeClass('hide');
-  $(switch_shiji).addClass('disabled');
-  $(switch_shigi).removeClass('disabled');
+  // $(switch_shiji).addClass('disabled');
+  // $(switch_shigi).removeClass('disabled');
 })
 $(switch_shiji).click( function() {
   console.log("switch_shji is clicked");
   $(content_shigi).removeClass('hide');
   $(content_shiji).addClass('hide');
-  $(switch_shiji).removeClass('disabled');
-  $(switch_shigi).addClass('disabled');
+  // $(switch_shiji).removeClass('disabled');
+  // $(switch_shigi).addClass('disabled');
 })
 
 //名前のリアルタイム入力
