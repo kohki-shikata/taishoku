@@ -8,6 +8,7 @@ html.no-js(lang='ja')
     title 30秒で退職届
     link(rel='stylesheet', href='common/css/toggle-switch.css')
     link(rel='stylesheet', href='common/css/flatpickr.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
     link(rel='stylesheet', href='common/css/app.css')
   body
     .row.expanded.collapse
@@ -58,6 +59,9 @@ html.no-js(lang='ja')
                     label(for="submit-day").text-right.middle 書類提出日
                   .columns.small-9
                     input#submit-day(type="text", placeholder="2017-02-01")
+          nav#ftr-nav.row
+            .column
+              i.fa.fa-print
     script(src='common/js/jquery.min.js')
     //- script(src='common/js/what-input.min.js')
     script(src='common/js/foundation.min.js')
