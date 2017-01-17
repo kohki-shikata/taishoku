@@ -50,6 +50,7 @@
 // @include motion-ui-animations;
 
 #preview {
+  background: url(../img/bg.png) repeat;
   position: relative;
   background-color: #ddd;
   height: 100vh;
@@ -140,6 +141,7 @@
     display: none;
   }
   #preview {
+    background-image: url(../common/img/bg.png);
     .page {
       position: relative;
       top:0;
