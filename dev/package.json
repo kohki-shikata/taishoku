@@ -9,10 +9,12 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-ejs": "^2.1.1",
+    "gulp-imagemin": "^3.1.1",
     "gulp-load-plugins": "^1.1.0",
     "gulp-plumber": "^1.1.0",
     "gulp-pug": "^3.2.0",
     "gulp-sass": "^2.3.1",
+    "imagemin-pngquant": "^5.0.0",
     "pug": "^2.0.0-beta6"
   },
   "scripts": {

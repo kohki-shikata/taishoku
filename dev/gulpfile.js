@@ -4,6 +4,8 @@ var ejs  = require('gulp-ejs');
 var pug = require('gulp-pug');
 var browserSync = require('browser-sync').create();
 var plumber = require('gulp-plumber');
+const imagemin = require('gulp-imagemin');
+const pngquant  = require('imagemin-pngquant');
 
 var dir = "../dist/";
 var html_preprocessor = "pug";
@@ -16,6 +18,7 @@ var sassPaths = [
 var running_tasks = [
   'sass',
   'browser-sync',
+  'img_comp',
   html_preprocessor
 ];
 
@@ -80,6 +83,22 @@ gulp.task('sass', function() {
     }))
     .pipe(gulp.dest(dir + 'common/css'))
     .pipe(browserSync.reload({stream:true}));
+});
+
+// compress images
+
+var asset_dir_img = dir + 'common/img/';
+
+gulp.task('img_comp', function() {
+  gulp.src("img/**/*")
+      .pipe(imagemin({
+        use:[pngquant({
+          quality: "60-80",
+          speed: 1
+        })]
+      }))
+      .pipe(gulp.dest(asset_dir_img))
+  .pipe(browserSync.reload({stream:true}));
 });
 
 gulp.task('default', running_tasks, function() {
