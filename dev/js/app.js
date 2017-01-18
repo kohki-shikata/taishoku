@@ -59,6 +59,18 @@ $('#name').on("keyup",function(){
   $('#preview .name-person').text(name);
 });
 
+$('#company-name').on("keyup",function(){
+  var company_name = $(this).val();
+  console.log("cn_key");
+  $('#preview .company-name p').text(company_name);
+});
+
+$('#company-ceo-name').on("keyup",function(){
+  var company_ceo_name = $(this).val();
+  console.log("cn_key");
+  $('#preview .company-ceo-name p').text(company_ceo_name);
+});
+
 //退職日、デートピッカー
 var date_fields = [
   '#x-day-date',

@@ -59,6 +59,16 @@ html.no-js(lang='ja')
                     label(for="submit-day").text-right.middle 書類提出日
                   .columns.small-9
                     input#submit-day(type="text", placeholder="2017-02-01")
+              .row.company-name
+                .columns.small-3
+                  label(for="company-name").text-right.middle 会社の名前
+                .columns.small-9
+                  input#company-name(type="text", placeholder="株式会社サンプル")
+              .row.company-ceo-name
+                .columns.small-3
+                  label(for="company-ceo-name").text-right.middle 代表者の名前
+                .columns.small-9
+                  input#company-ceo-name(type="text", placeholder="代表取締役社長　田中 一郎")
         nav#ftr-nav.row
           .column.text-center
             a.button 印刷する
