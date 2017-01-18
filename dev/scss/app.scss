@@ -136,6 +136,17 @@
   }
 }
 
+#controller {
+  height: 100vh;
+  position: relative;
+}
+#ftr-nav {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(100,100,100,.5);
+  width: 100%;
+  padding-top: 1em;
+}
 @media print {
   #controller {
     display: none;
