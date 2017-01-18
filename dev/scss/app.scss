@@ -140,6 +140,13 @@
   height: 100vh;
   position: relative;
 }
+
+#selectors {
+  .column,.columns {
+    margin-bottom: 2em;
+  }
+}
+
 #ftr-nav {
   position: absolute;
   bottom: 0;
@@ -147,6 +154,7 @@
   width: 100%;
   padding-top: 1em;
 }
+
 @media print {
   #controller {
     display: none;
