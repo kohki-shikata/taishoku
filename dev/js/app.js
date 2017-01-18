@@ -73,7 +73,7 @@ $('#company-name').on("keyup",function(){
 $('#company-ceo-name').on("keyup",function(){
   var company_ceo_name = $(this).val();
   console.log("cn_key");
-  $('#preview .company-ceo-name p').text(company_ceo_name);
+  $('#preview .company-ceo-name span.name').text(company_ceo_name);
 });
 
 //退職日、デートピッカー
