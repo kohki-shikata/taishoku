@@ -59,6 +59,11 @@ $('#name').on("keyup",function(){
   $('#preview .name-person').text(name);
 });
 
+$('#position').on("keyup",function(){
+  var position = $(this).val();
+  $('#preview .position').text(position);
+});
+
 $('#company-name').on("keyup",function(){
   var company_name = $(this).val();
   console.log("cn_key");
