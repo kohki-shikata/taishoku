@@ -19,5 +19,9 @@
     "test",
     "tests"
   ],
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "css-toggle-switch": "^4.0.2",
+    "flatpickr": "flatpickr-calendar#^2.3.3"
+  }
 }
