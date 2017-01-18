@@ -63,6 +63,7 @@ var copy_js = [
 var copy_css = [
 'bower_components/motion-ui/dist/motion-ui.min.css',
 'bower_components/flatpickr/dist/flatpickr.min.css',
+'bower_components/css-toggle-switch/dist/toggle-switch.css',
 ];
 
 gulp.task('copy', function () {
